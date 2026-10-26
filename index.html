@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arquivos CBI | O Mentalista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">CBI <span>• ARQUIVOS CONFIDENCIAIS</span></div>
+    <a href="#criadora">SOBRE</a>
+  </header>
+
+  <main>
+    <section id="telaInicio" class="tela ativa">
+      <p class="etiqueta">CALIFORNIA BUREAU OF INVESTIGATION</p>
+      <h1>O MENTALISTA</h1>
+      <p class="descricao">Toda memória esconde uma pista. Todo detalhe pode revelar a verdade.</p>
+
+      <div class="painel">
+        <p>CLASSIFICAÇÃO: <strong>EXTREMA</strong></p>
+        <p>Encontre os 16 pares de personagens em apenas 90 segundos.</p>
+        <p>Acerto: +100 pontos | Erro: −20 pontos</p>
+        <button id="btnJogar">INICIAR INVESTIGAÇÃO</button>
+      </div>
+    </section>
+
+    <section id="telaJogo" class="tela">
+      <p class="etiqueta">CASO ABERTO • ACESSO RESTRITO</p>
+      <h1>IDENTIFIQUE OS PARES</h1>
+      <div class="estatisticas">
+        <div>PARES<strong id="pares">0/16</strong></div>
+        <div>PONTOS<strong id="pontos">0</strong></div>
+        <div>TENTATIVAS<strong id="tentativas">0</strong></div>
+        <div>TEMPO<strong id="tempo">01:30</strong></div>
+      </div>
+      <p id="status" role="status">Preparando o tabuleiro...</p>
+      <div id="tabuleiro"></div>
+      <div class="botoes">
+        <button id="btnReiniciar">REINICIAR</button>
+        <button id="btnVoltarInicio">MENU INICIAL</button>
+      </div>
+    </section>
+
+    <section id="telaResultado" class="tela">
+      <p class="etiqueta">RELATÓRIO FINAL</p>
+      <h1 id="tituloResultado">CASO ENCERRADO</h1>
+      <p id="mensagemResultado" class="descricao"></p>
+      <div class="painel">
+        <h2 id="pontuacaoFinal">Pontuação: 0</h2>
+        <button id="btnNovamente">NOVA INVESTIGAÇÃO</button>
+        <button id="btnVoltarResultado">VOLTAR AO MENU</button>
+      </div>
+    </section>
+
+    <section id="criadora">
+      <p class="etiqueta">REGISTRO DO DESENVOLVEDOR</p>
+      <h2>Projeto desenvolvido por Estefanny</h2>
+      <p>2º ano EMTI</p>
+      <p>Jogo de memória inspirado na série O Mentalista.</p>
+    </section>
+  </main>
+
+  <footer>ARQUIVOS CBI © 2026 • DESENVOLVIDO POR ESTEFANNY</footer>
+  <script src="script.js"></script>
+</body>
+</html>
